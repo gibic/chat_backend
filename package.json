@@ -1,0 +1,25 @@
+{
+  "name": "chat_backend",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "dev:env": "dotenv -e .env -e .env.dev -- bun run dev",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "eslint": "^9.36.0",
+    "eslint-plugin-import-x": "^4.16.1",
+    "hono": "^4.9.8",
+    "typescript-eslint": "^8.44.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/bun": "latest",
+    "dotenv-cli": "^10.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2"
+  }
+}
